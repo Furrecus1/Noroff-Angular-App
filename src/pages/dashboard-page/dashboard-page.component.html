@@ -1,0 +1,52 @@
+<h1>My Dashboard</h1>
+
+<div class="[ container ]">
+      <div class="[ row ]">
+
+<div class="[ col-md-4 ]">
+<h2>Weather For Norway Oslo<br /></h2>
+<div class="[ card ]" *ngFor="let weather of weatherDetail">
+      Sky Conditions: {{ weather.weather_state_name }}<br />
+      Min Tempreture: {{ weather.min_temp }}<br />
+      Max Tempreture: {{ weather.max_temp }}<br />
+      Actual Tempreture: {{ weather.the_temp }}<br />
+      Date Created: {{ weather.created }}<br />
+      Humidity: {{ weather.humidity }}<br />
+</div>
+</div>
+
+<div class="[ col-md-4 ]">
+<h2>Trivia questions<br /></h2>
+<div class="[ card ]" *ngFor="let trivia of triviaDetail">
+      Question: {{ trivia.question }}<br />
+      Answer: {{ trivia.correct_answer }}<br />
+</div>
+</div>
+
+<div class="[ col-md-4 ]">
+<h2>Breaking Bad quotes<br /></h2>
+<div class="[ card ]" *ngFor="let bad of badDetail">
+      Quote: {{ bad.quote }}<br />
+      Actor: {{ bad.author }}<br />
+</div>
+</div>
+</div>
+
+<div class="[ row ]">
+
+<div class="[ col-md-6 ]">
+<h2>Pokemon cards</h2>
+<div class="[ card ]" *ngFor="let dog of dogDetail">
+      <img src="{{dog.imageUrl}}" alt="pokemon cards" width="100%">
+</div>
+</div>
+
+<div class="[ col-md-6 ]">
+<h2>Rick & Morty cards<br /></h2>
+<div class="[ card ]" *ngFor="let rickmorty of rickmortyDetail">
+      <img src="{{rickmorty.image}}" alt="rick and morty cards" width="100%">
+</div>
+</div>
+
+</div>
+</div> 

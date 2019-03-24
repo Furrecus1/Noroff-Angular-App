@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+$font: "https://fonts.googleapis.com/css?family=Lato";
+
+@if(global_variable_exists(font)) {
+@import url($font);
+}
+$font-lato: 'Lato', sans-serif;
+$bg-color: #020801;
+$green-color: #2ACE14;
+
+body{
+    background-color: $bg-color;
+    margin: 0;
+    color: white;
+    font-family: $font-lato;
+}
+h1{
+    background-color: $green-color;
+    text-align: center;
+    color: $bg-color;
+    font-weight: bold;
+    font-size: 38px;
+    padding: 20px;
+}
+h2{
+    height: 100px;
+    padding-top: 10px;
+}

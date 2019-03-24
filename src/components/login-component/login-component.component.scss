@@ -1,0 +1,20 @@
+.login{
+    text-align: center;
+    margin-top: 40px;
+
+    input{
+        width: 260px;
+        border-radius: 4px;
+        padding: 6px;
+    }
+    .errors{
+        color: red;
+    }
+    button{
+        background-color: #2ACE14;
+        color: white;
+        padding: 4px 14px;
+        border: none;
+        border-radius: 4px;
+    }
+}
